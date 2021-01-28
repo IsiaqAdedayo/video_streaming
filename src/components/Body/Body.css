@@ -1,0 +1,106 @@
+.body{
+    flex: 1;
+    display: flex;
+    height: 140vh;
+    min-width: 85vw;
+    background: linear-gradient(to bottom, #ada7a7, #c0bbbb);
+    overflow: hidden;
+}
+
+.body_left{
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.body_left_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15%;
+    margin-bottom: -9%;
+    margin-left: 42%;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.body_chat{
+    position: fixed;
+    z-index: 100;
+    width: 600px;
+    height: 200px;
+    left: 55%;
+    top: 34%;
+}
+
+.color{
+    position: absolute;
+    filter: blur(150px);
+}
+
+.color:nth-child(1){
+    top: -250px;
+    width: 600px;
+    height: 600px;
+    background: #c2528a;
+}
+
+.color:nth-child(2){
+    bottom: -150px;
+    left: 350px;
+    width: 500px;
+    height: 500px;
+    background: #bbb962;
+}
+
+.color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    height: 300px;
+    background: #0090b1;
+}
+
+
+
+
+
+
+@media only screen and (max-width : 1064px){
+
+    .body_left_container{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18%;
+        margin-left: 11%;
+        position: relative;
+    }
+    
+    @media only screen and (max-width : 654px){
+        .body{
+            height: 290vh;
+        }
+        
+    
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

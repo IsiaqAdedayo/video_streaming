@@ -1,0 +1,46 @@
+.stream{
+    height: 50%;
+    margin-top: -24%;
+    margin-bottom: 50%;
+}
+
+.stream__container{
+    display: flex;
+    margin-left: -430px;
+}
+
+#twitch-embed{
+    width: 160% !important; 
+    height: 100%; 
+}
+
+@media only screen and (max-width : 1064px){
+
+    .stream__container{
+        display: flex;
+        margin-left: -15%;
+        margin-top: 10%;
+    }
+
+    .stream{
+        height: 50%;
+        margin-top: -24%;
+        margin-bottom: 45%;
+    }
+
+    #twitch-embed{
+        width: 53vw !important; 
+        height: 50vh; 
+
+    }
+    
+     @media only screen and (max-width : 654px){
+       
+        .stream{
+        height: 50%;
+        margin-top: -24%;
+        margin-bottom: 235px;
+        }
+    }
+    
+  }

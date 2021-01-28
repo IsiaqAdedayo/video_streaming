@@ -1,0 +1,55 @@
+.channel {
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+.channel:hover{
+    background-color: #25252c;
+}
+
+.channel__details{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.channel__details > img{
+    height: 40px;
+    margin-right: 5px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.game{
+    font-weight: lighter;
+    font-size: smaller;
+}
+
+.name{
+    text-transform: capitalize;
+}
+
+.circle{
+    font-size: 8px;
+}
+
+@media only screen and (max-width : 1064px){
+
+    .circle,.channel__names{
+        display: none;
+    }
+
+    @media only screen and (max-width : 654px){
+        .channel__details > img {
+            height: 25px;
+            width: 25px;
+        }
+    }
+    
+  }

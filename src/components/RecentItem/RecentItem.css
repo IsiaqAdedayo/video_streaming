@@ -1,0 +1,40 @@
+.items{
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.item__details{
+    display: flex;
+    margin-top: -40px;    
+}
+
+.item__details>img{
+    object-fit: contain;
+    height: 60px;
+    margin-right: 10px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.item__image{
+    object-fit: contain;
+    height: 240px;
+}
+
+
+@media only screen and (max-width : 654px){
+    .items{
+        margin-top: 40px;
+    }
+
+    .item__image>img{
+        width: 70vw;
+    }
+
+    .item__details{
+        margin-top: -60px;
+    }
+}

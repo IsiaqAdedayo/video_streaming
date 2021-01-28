@@ -1,0 +1,239 @@
+ .chat {
+    text-align: center;
+    max-width: 382px;
+    margin: 0 auto;
+    max-height: 21vh;
+    z-index: 100;
+    margin-top: -12%;
+    margin-left: 39%;
+    display: none;
+    border-radius: 7px;
+  }
+  
+  .chatHeader,.chatHeaderClose {
+    background-color: rgb(24, 23, 23,0.8);
+    height: 11vh;
+    min-height: 50px;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    width: 100%;
+    max-width: 382px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .chatHeaderClose{
+    height: 5vh;
+    position: absolute;
+    margin-top: 65%;
+    margin-left: 65%;
+    max-width: 152px;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .chatHeaderClose > i{
+    color: #9147ff;
+  }
+
+  .chat > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(40, 37, 53,0.9);
+  }
+  
+  .main {
+    padding: 10px;
+    height: 42vh;
+    margin: 1vh 0 10vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main::-webkit-scrollbar {
+    width: 0.25rem;
+  }
+  
+  .main::-webkit-scrollbar-track {
+    background: #1e1e24;
+  }
+  
+  .main::-webkit-scrollbar-thumb {
+    background: #6649b8;
+  }
+  
+  .chat_form {
+    height: 10vh;
+    /* position: fixed; */
+    bottom: 0;
+    background-color: rgb(24, 23, 23);
+    width: 100%;
+    max-width: 382px;
+    display: flex;
+    font-size: 1.5rem;
+  }
+  
+  .chat_form > button {
+    width: 20%;
+    background-color: rgb(56, 56, 143);
+  }
+  
+  
+  .chat_form > input {
+    line-height: 1.5;
+    width: 100%;
+    font-size: 1.5rem;
+    background: rgb(229, 229, 234,0.3);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+  }
+  
+  .sign-out {
+    background-color: rgba(63, 18, 18, 0.9); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border-radius: 7px;
+  }
+  
+  .chat_form > button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  
+  .sign-in {
+    color: rgb(40, 44, 52);
+    background: white;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 42%;
+  }
+  
+  .signIn{
+    height: 66vh;
+    width: 372px;
+    /* padding-top: 52%; */
+  }
+  
+  
+  ul, li {
+    text-align: left;
+    list-style: none;
+  }
+  
+  .sent > p, .received > p {
+    max-width: 500px;
+    margin-bottom: 12px;
+    /* line-height: 24px; */
+    padding: 10px 20px;
+    border-radius: 25px;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  
+  .message {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .sent {
+    flex-direction: row-reverse;
+  }
+  
+  .sent > p {
+    color: white;
+    background: rgb(8, 147, 246,0.5);
+    align-self: flex-end;
+  }
+  .received > p {
+    background: rgb(229, 229, 234,0.5);
+    color: black;
+  }
+  
+  .chat_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px 5px;
+  }
+
+
+
+
+
+
+  @media only screen and (max-width : 1064px){
+
+    .chat {
+      max-width: 51vw;
+      margin-top: -11%;
+      margin-left: -8%;
+    }
+
+    .sent > p, .received > p {
+      padding: 1.5vh 2vw;
+      font-size: 2vw;
+    }
+
+    .chatHeaderClose{
+      margin-left: 25%;
+      margin-top: 76%;
+    }
+    
+     @media only screen and (max-width : 654px){
+      .chat {
+        max-width: 83vw;
+        margin-left: -30%;
+      }
+
+      .chatHeaderClose{
+        margin-left: 5%;
+        margin-top: 54%;
+      }
+        
+    }
+
+     @media only screen and (max-width : 375px){
+      .chat {
+        max-width: 84vw;
+        margin-left: -26%;
+      }
+
+      .chatHeaderClose{
+        margin-left: 1%;
+        margin-top: 54%;
+      }
+        
+    }
+
+     @media only screen and (max-width : 320px){
+      .chat {
+        max-width: 85vw;
+        margin-left: -23%;
+      }
+
+      .chatHeaderClose{
+        margin-left: -3%;
+        margin-top: 54%;
+      }
+        
+    }
+    
+  }
