@@ -24,9 +24,7 @@ const Profile = ({data}) => {
 
 const mapStateToProps = state => {
     return{
-        loading: state.bodyReducer.loading,
-        data: state.bodyReducer.data,
-        error: state.bodyReducer.error
+        data: state.bodyReducer.data
     }
 }
 

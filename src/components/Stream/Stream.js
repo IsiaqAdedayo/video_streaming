@@ -14,15 +14,13 @@ const Stream = ({stream, selectedStream}) => {
                         <ReactTwitchEmbedVideo 
                         channel={selectedStream.channel.name} 
                         width={`160%`} 
-                        height={`150%`} 
-                        // autoplay
+                        height={`150%`}
                         layout='video' />
                     ):(
                         <ReactTwitchEmbedVideo 
                         channel={stream.channel.name} 
                         width={`160%`} 
                         height={`150%`} 
-                        // autoplay
                         layout='video' />
                     )
                 }
@@ -34,9 +32,6 @@ const Stream = ({stream, selectedStream}) => {
 
 const mapStateToProps = state => {
     return{
-        loading: state.bodyReducer.loading,
-        data: state.bodyReducer.data,
-        error: state.bodyReducer.error,
         selectedStream: state.bodyReducer.selectedStream
     }
 }

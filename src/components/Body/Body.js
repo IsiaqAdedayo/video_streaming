@@ -3,7 +3,7 @@ import "./Body.css"
 import Profile from '../Profile/Profile';
 import Stream from '../Stream/Stream';
 import { connect } from 'react-redux';
-import {fetchData} from '../../redux/body/bodyActions'
+import { fetchData } from '../../redux/body/bodyActions'
 import Chat from '../Chat/Chat';
 
 const Body = ({data , fetchData}) => {
@@ -37,9 +37,7 @@ const Body = ({data , fetchData}) => {
 
 const mapStateToProps = state => {
     return{
-        loading: state.bodyReducer.loading,
-        data: state.bodyReducer.data,
-        error: state.bodyReducer.error
+        data: state.bodyReducer.data
     }
 }
 

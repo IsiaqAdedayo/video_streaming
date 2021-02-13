@@ -38,13 +38,8 @@ const Sidebar = ({data, fetchData, searchData}) => {
 
 const mapStateToProps = (state) => {
     return{
-        loading: state.bodyReducer.loading,
         data: state.bodyReducer.data,
-        error: state.bodyReducer.error,
-        onSelectedStream: state.bodyReducer.selectedStream,
-        searchLoading: state.searchReducer.loading,
-        searchData: state.searchReducer.data,
-        searchError: state.searchReducer.error
+        searchData: state.searchReducer.data
     }
 }
 

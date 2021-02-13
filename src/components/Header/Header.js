@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import fetchSearchData from '../../redux/search/searchActions'
 
 
-const Header = ({searchData,fetchSearchData}) => {
+const Header = ({fetchSearchData}) => {
 
     const [query, setQuery] = useState('')
     
@@ -17,7 +17,7 @@ const Header = ({searchData,fetchSearchData}) => {
     return (
         <div className="header">
             <div className="header__left">
-                <i class="fas fa-2x fa-play header__leftLogo"></i>
+                <i className="fas fa-2x fa-play header__leftLogo"></i>
                 <h4>Following</h4>
                 <h4>Browse</h4>
                 <div className="vertical_line"></div>
@@ -55,13 +55,6 @@ const Header = ({searchData,fetchSearchData}) => {
     )
 }
 
-const mapStateToProps = state => {
-    return{
-        loading: state.searchReducer.loading,
-        searchData: state.searchReducer.data,
-        error: state.searchReducer.error
-    }
-}
 
 const mapDispatchToProps = dispatch => {
     return{
@@ -70,4 +63,4 @@ const mapDispatchToProps = dispatch => {
 }
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Header);
+export default connect(null, mapDispatchToProps)(Header);
